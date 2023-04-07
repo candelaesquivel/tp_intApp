@@ -1,10 +1,10 @@
-package edacore.transport.controller;
+package core.eda.transport;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ControllerApplicationTests {
+class TransportApplicationTests {
 
 	@Test
 	void contextLoads() {
