@@ -29,7 +29,7 @@ public class RestWebController {
  public void bind(){
    System.out.println("Bind");
  }
- /*public void bind(@RequestParam(name="canal") String exchange, @RequestParam(name="subscriber") String queue) throws KeyManagementException, NoSuchAlgorithmException, URISyntaxException, IOException, TimeoutException  {
+ /*public void bind(@RequestParam(name="channel") String exchange, @RequestParam(name="subscriber") String queue) throws KeyManagementException, NoSuchAlgorithmException, URISyntaxException, IOException, TimeoutException  {
   TransportController.getInstance().bind(exchange, queue);
 }*/
 
@@ -53,9 +53,4 @@ public class RestWebController {
   TransportController.getInstance().unbind(exchange, queue);
 }*/
 
-
 }
-
-
-  
-
