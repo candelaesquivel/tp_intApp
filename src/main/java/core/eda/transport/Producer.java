@@ -12,7 +12,6 @@ public class Producer {
   public Producer(){
   }
 
-  @Scheduled(initialDelay = 500, fixedDelay = 1000)
   public void send(){
     String msg = new String("Hello Queue");
     rabbit.convertAndSend(TransportConfig.TRADING_EXCHANGE, TransportConfig.TRADING_QUEUE, msg);

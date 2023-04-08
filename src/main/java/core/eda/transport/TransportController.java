@@ -10,11 +10,9 @@ public class TransportController {
   @Autowired
   Producer producer;
 
-  @Scheduled(initialDelay = 500, fixedDelay = 1000)
   public void publish(){
     RandomString rnd = new RandomString();
     String msg = rnd.nextString();
     producer.send(msg);
   }
-
 }
